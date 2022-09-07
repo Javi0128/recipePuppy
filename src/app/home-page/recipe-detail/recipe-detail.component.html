@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-between border-bottom mb-3">
+  <h2 mat-dialog-title >{{ data.name }}</h2>
+  <mat-icon (click)="dialogRef.close()">close</mat-icon>
+</div>
+<mat-dialog-content class="mat-typography">
+ <div class="d-flex">
+  <div>
+    <div>
+      <label class="fw-bold">Tag line</label><br>
+      <p>{{ data.tagline }}</p>
+    </div>
+    <div>
+      <label class="fw-bold">First brewed</label><br>
+      <p>{{ data.first_brewed }}</p>
+    </div>
+    <div>
+      <label class="fw-bold">First brewed</label><br>
+      <p>{{ data.first_brewed }}</p>
+    </div>
+    <div>
+      <label class="fw-bold">Contributed by</label><br>
+      <p>{{ data.contributed_by }}</p>
+    </div>
+
+  </div>
+
+  <img [src]="data.image_url" class="ms-auto me-4 image-style" alt="">
+ </div>
+ <div>
+  <label class="fw-bold">Description</label><br>
+  <p>{{data.description  }}</p>
+</div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close (click)="dialogRef.close()">Close</button>
+</mat-dialog-actions>

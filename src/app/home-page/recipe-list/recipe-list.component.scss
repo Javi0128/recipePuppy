@@ -1,0 +1,23 @@
+.hover-class{
+
+  color: white;
+  background-color: black;
+
+  &:hover{
+  background-color: gray;
+  color: black;
+  }
+}
+.card-hover{
+  &:hover{
+    box-shadow: 3px 3px 2px gray;
+  }
+}
+
+
+.text-overflow {
+
+  white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
